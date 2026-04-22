@@ -146,12 +146,12 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
 
 .content:not(.content__concentration) {
   padding-inline: 10px;
-  padding-block-start: 55px;
+  padding-block-start: 60px;
 }
 
 .content__concentration {
@@ -409,14 +409,11 @@
 
   .content__title-attention {
     padding-block-start: 10px;
+    max-inline-size: 315px;
   }
 
   .content__attention-menu-list {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .content__title-attention {
-    max-inline-size: 315px;
   }
 
   .content__advice {
