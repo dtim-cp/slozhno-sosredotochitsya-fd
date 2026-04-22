@@ -137,6 +137,7 @@
   color: #000028;
   background-color: var(--accent-bg-color);
   inline-size: 94%;
+  margin-block-end: 1rem;
   block-size: fit-content;
   justify-self: center;
   align-self: center;
@@ -145,12 +146,12 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .content:not(.content__concentration) {
   padding-inline: 10px;
-  padding-block-start: 50px;
+  padding-block-start: 55px;
 }
 
 .content__concentration {
@@ -159,7 +160,9 @@
 }
 
 .content__image {
-  padding-block-end: 40px;
+  display: flex;
+  gap: 10px;
+  padding-block-end: 50px;
 }
 
 .content__menu-list {
@@ -209,7 +212,7 @@
 .content__menu-list-description {
   font-family: var(--main-font, sans-serif);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 350;
   font-size: inherit;
   line-height: 23px;
   color: var(--text-color);
@@ -245,6 +248,26 @@
 }
 
 @media (min-width: 768px) {
+  .decorated-zone::after {
+    margin-block-start: 20px;
+    margin-inline-end: 20px;
+  }
+
+  .decorated-zone::before{
+    margin-block-end: 20px;
+    margin-inline-start: 20px;
+  }
+
+  .decoration {
+    right: 2.3em;
+    top: 1.3em;
+  }
+
+  .header__theme-menu {
+    padding-inline-end: 20px;
+    padding-block-start: 20px;
+  }
+
   .header__title {
     font-size: 7.375rem;
   }
@@ -257,16 +280,16 @@
 
   .content:not(.content__concentration) {
     padding-inline: 20px;
-    padding-block-start: 80px;
+    padding-block-start: 85px;
   }
 
   .content__image {
-    padding-block-end: 60px;
+    padding-block-end: 90px;
   }
 
   .content__concentration {
     display: grid;
-    grid-template-columns: 235px 1fr;
+    grid-template-columns: 230px 1fr;
     padding-inline: 20px;
     padding-block-start: 60px;
   }
@@ -281,7 +304,7 @@
 
   .content__advice {
     display: grid;
-    grid-template-columns: 236px 1fr;
+    grid-template-columns: 230px 1fr;
   }
 
   .content__image-list {
@@ -322,11 +345,27 @@
     min-block-size: 768px;
   }
 
+  .decorated-zone::after {
+    margin-block-start: 20px;
+    margin-inline-end: 20px;
+  }
+
+  .decorated-zone::before{
+    margin-block-end: 20px;
+    margin-inline-start: 20px;
+  }
+
+  .decoration {
+    right: 2.3em;
+    top: 1.3em;
+  }
+
   .header__theme-menu {
     display: flex;
     justify-self: center;
     align-self: flex-start;
     padding-block-start: 20px;
+    padding-inline-end: 20px;
   }
 
   .header__theme-menu-list {
@@ -343,7 +382,7 @@
 
   .content:not(.content__concentration) {
     padding-inline: 20px;
-    padding-block-start: 80px;
+    padding-block-start: 90px;
   }
 
   .content__image {
