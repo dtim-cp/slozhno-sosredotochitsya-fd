@@ -428,10 +428,6 @@
     gap: 22px;
   }
 
-  /*.content__menu-list-title-advice {
-    margin-block-end: 40px;
-  }*/
-
   .content__image-list {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -485,11 +481,11 @@
   }
   
   .theme-light .decoration {
-  display: none;
+    display: none;
   }
 
   .theme-light .decoration::after {
-  display: none;
+    display: none;
   }
 }
 
@@ -506,11 +502,11 @@
   }
 
   .decoration {
-  display: none;
+    display: none;
   }
 
   .decoration::after {
-  display: none;
+    display: none;
   }
 
   .theme-dark .decoration {
