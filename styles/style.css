@@ -8,8 +8,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--bg-color);
-  color: var(--text-color);
   font-size: var(--main-font-size);
+  color: var(--text-color);
 }
 
 .header {
@@ -154,20 +154,18 @@
   padding-block-start: 60px;
 }
 
+.content__title {
+  font-family: var(--main-font, sans-serif);
+  font-style: normal;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 23px;
+  color: var(--accent-text-color);
+}
+
 .content__concentration {
   padding-inline: 10px;
   padding-block-start: 40px;
-}
-
-.content__image-title {
-  margin-block-start: 10px;
-}
-
-.content__image {
-  display: flex;
-  gap: 10px;
-  padding-block: 40px;
-  padding-inline: 10px;
 }
 
 .content__menu-list {
@@ -179,29 +177,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.content__title {
-  font-family: var(--main-font, sans-serif);
-  font-style: normal;
-  font-weight: 700;
-  font-size: inherit;
-  line-height: 23px; /* or 130% */
-  color: var(--accent-text-color);
-}
-
-.content__link {
-  text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-bg-color);
-}
-
-.content__link:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.content__link:focus {
-  outline: 1px solid var(--text-color);
 }
 
 .content__menu-list-title {
@@ -223,6 +198,20 @@
   color: var(--text-color);
 }
 
+.content__link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-bg-color);
+}
+
+.content__link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content__link:focus {
+  outline: 1px solid var(--text-color);
+}
+
 .content__advice-menu-list {
   display: grid;
   gap: 25px;
@@ -230,6 +219,17 @@
 
 .content__advice-menu-list-title {
   font-weight: 400;
+}
+
+.content__image {
+  display: flex;
+  gap: 10px;
+  padding-block: 40px;
+  padding-inline: 10px;
+}
+
+.content__image-title {
+  margin-block-start: 10px;
 }
 
 .content__image-list {
@@ -300,12 +300,12 @@
     padding-block-start: 60px;
   }
 
-  .content__attention-menu-list {
-    flex-direction: row;
-  }
-
   .content__title-attention {
     max-inline-size: 236px;
+  }
+
+  .content__attention-menu-list {
+    flex-direction: row;
   }
 
   .content__advice {
@@ -396,12 +396,6 @@
     padding-inline: 20px;
     padding-block-start: 80px;
   }
-
-  .content__image {
-    padding-inline: 20px;
-    padding-block-start: 80px;
-    padding-block-end: 55px;
-  }
   
   .content__concentration {
     display: grid;
@@ -426,6 +420,12 @@
 
   .content__advice-menu-list {
     gap: 22px;
+  }
+
+  .content__image {
+    padding-inline: 20px;
+    padding-block-start: 80px;
+    padding-block-end: 55px;
   }
 
   .content__image-list {
