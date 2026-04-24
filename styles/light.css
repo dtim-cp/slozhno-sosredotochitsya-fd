@@ -29,7 +29,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-background-image: url('/images/cover-image-light.png');
+    --main-background-image: url('../images/cover-image-light.png');
     --bg-color: #FFEEF6;
     --text-color: #353430;
     --accent-text-color: #353430;
@@ -45,13 +45,5 @@
 
   .decoration::after {
     display: none;
-  }
-
-  .theme-dark .decoration {
-    display: inline;
-  }
-
-  .theme-dark .decoration::after {
-    display: inline-block;
   }
 }
