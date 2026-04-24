@@ -3,14 +3,14 @@
   и их переопределение под различные устройства
 */
 :root {
-  --main-background-image: url('/images/cover-image-dark.png');
+  --main-background-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
   --text-color: #F1B2CE;
   --accent-text-color: #FF0070;
   --main-font-size: 1.125rem;
   --accent-color: #DB00FF;
   --accent-bg-color: #FF0070;
-  --main-font: 'IBM Plex Mono';
+  --main-font: 'IBM Plex Mono', monospace;
   --border-color: #FF0070;
   --accent-border-color: rgba(255, 0, 112, 0.4);
 }
