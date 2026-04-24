@@ -26,7 +26,6 @@
   block-size: 25px;
   border-top: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
-  right: 0;
   top: 10px;
   right: 10px;
 }
@@ -38,7 +37,6 @@
   block-size: 25px;
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
-  bottom: 0;
   bottom: 10px;
   left: 10px;
 }
@@ -231,7 +229,7 @@
 
 @media (min-width: 768px) {
   .title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     padding-inline: 0;
   }
 

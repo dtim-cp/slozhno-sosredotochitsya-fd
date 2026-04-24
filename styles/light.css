@@ -48,7 +48,7 @@
   }
 
   .theme-dark .decoration {
-    display: inline-block;
+    display: inline;
   }
 
   .theme-dark .decoration::after {
